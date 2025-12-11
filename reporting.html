@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comments with Actions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .comment-container {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .comment {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  }
+
+  .comment-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .comment-text {
+    margin-bottom: 12px;
+    color: #555;
+  }
+
+  .comment-buttons button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+
+  .comment-buttons button:hover {
+    background-color: #45a049;
+  }
+
+  /* Different colors for different actions */
+  .report-btn { background-color: #f44336; }
+  .report-btn:hover { background-color: #e53935; }
+
+  .flag-btn { background-color: #ff9800; }
+  .flag-btn:hover { background-color: #fb8c00; }
+
+  .block-btn { background-color: #9c27b0; }
+  .block-btn:hover { background-color: #8e24aa; }
+</style>
+</head>
+<body>
+
+<h1>Comments Section</h1>
+
+<div class="comment-container">
+  <div class="comment">
+    <div class="comment-header">Noli</div>
+    <div class="comment-text">This is the first comment. Be nice to each other!</div>
+    <div class="comment-buttons">
+      <button class="report-btn">Report</button>
+      <button class="flag-btn">Flag</button>
+      <button class="block-btn">Block</button>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header">JohnDoe</div>
+    <div class="comment-text">This comment sucks you all are disgusting.</div>
+    <div class="comment-buttons">
+      <button class="report-btn">Report</button>
+      <button class="flag-btn">Flag</button>
+      <button class="block-btn">Block</button>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header">Guest66</div>
+    <div class="comment-text">I disagree with this, but let's stay respectful.</div>
+    <div class="comment-buttons">
+      <button class="report-btn">Report</button>
+      <button class="flag-btn">Flag</button>
+      <button class="block-btn">Block</button>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header">DirectorVivian</div>
+    <div class="comment-text">Thanks for sharing this, very useful tips!</div>
+    <div class="comment-buttons">
+      <button class="report-btn">Report</button>
+      <button class="flag-btn">Flag</button>
+      <button class="block-btn">Block</button>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header">CoolKid</div>
+    <div class="comment-text">I will hack all of you!</div>
+    <div class="comment-buttons">
+      <button class="report-btn">Report</button>
+      <button class="flag-btn">Flag</button>
+      <button class="block-btn">Block</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

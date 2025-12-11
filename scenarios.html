@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenarios</title>
+</head>
+<body>
+    <style>
+         body{
+        background: linear-gradient(280deg, rgb(18, 18, 105), rgb(179, 24, 24));
+       }
+       
+       .box{
+        background-color: white;
+        width: 500px;
+        height: 530px;
+        border-radius: 15px;
+        align-items: center;
+        padding: 20px;
+            box-sizing: border-box;
+
+            /* FIX: remove centering */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        
+   
+    }
+   
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+         height: 100vh;
+    }
+   
+   input{
+    width: 290px;
+    height: 60px;
+   }
+   
+   
+   </style>
+<div class="container">
+    <div class="box">
+        <h1>
+            <strong>
+                Example
+            </strong>
+        </h1>
+    <h2 id="cyberExample">
+        Kevin posts about his new kicks. Bob and his friends start to make fun of his posts saying things like:</h2>
+        
+    <input type="text" placeholder="What should you do?">
+    <button type="reset">Do another</button>
+    
+
+</div>
+ 
+
+
+
+
+
+
+</div>
+
+<script>
+    const examples = [
+        "Sending hurtful messages through social media.",
+        "Posting embarrassing photos of someone without permission.",
+        "Spreading rumors online to damage someone's reputation.",
+        "Creating fake accounts to harass or impersonate someone.",
+        "Excluding someone from online groups or chats on purpose.",
+        "Threatening someone through emails or messages.",
+        "Leaving mean comments on someone’s posts."
+    ];
+
+    const randomExample = examples[Math.floor(Math.random() * examples.length)];
+
+    document.getElementById("cyberExample").textContent = randomExample;
+let resetBtn = document.querySelector("button");
+resetBtn.addEventListener("click", () => {
+    window.location.reload();
+})
+
+
+</script>
+
+</body>
+</html>

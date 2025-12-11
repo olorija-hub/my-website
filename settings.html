@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.settings-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.setting:last-child {
+    margin-bottom: 0;
+}
+
+/* Toggle Button */
+.button {
+    background-color: #d2d2d2;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+input:checked + .button {
+    background-color: crimson;
+}
+
+input:checked + .button::before {
+    transform: translateX(30px);
+}
+
+input {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="settings-container">
+    <div class="setting">
+        <span>Enable Notifications</span>
+        <input type="checkbox" id="setting1">
+        <label for="setting1" class="button"></label>
+    </div>
+    <div class="setting">
+        <span>Dark Mode</span>
+        <input type="checkbox" id="setting2">
+        <label for="setting2" class="button"></label>
+    </div>
+    <div class="setting">
+        <span>Reporting</span>
+        <input type="checkbox" id="setting3">
+        <label for="setting3" class="button"></label>
+    </div>
+    <div class="setting">
+        <span>Blocking</span>
+        <input type="checkbox" id="setting4">
+        <label for="setting4" class="button"></label>
+    </div>
+</div>
+
+</body>
+</html>

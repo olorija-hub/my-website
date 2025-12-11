@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Message</title>
+</head>
+<body>
+    <style>
+    body{
+        background: linear-gradient(280deg, rgb(18, 18, 105), rgb(179, 24, 24));
+    }
+    
+    
+    
+    button{
+        border-color: gray;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 9px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 15px;
+        margin-top: 14px;
+        align-self: flex-start;      /* button aligns to the left edge of the input */
+        cursor: pointer;
+    }
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     align-items: center;     /* centers horizontally */
+    height: 100vh;           /* full page height */
+    gap: 10px;        
+}
+
+input{
+    padding-right: 500px;
+    padding-bottom: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: gray;
+    }
+
+h1{
+    color: white;
+}
+    </style>
+    
+    
+<div class="container">
+     <h1>Would you like to send an email?</h1>
+
+    <div><input type="text" placeholder="Would you like to send an email?"></div>
+   
+   <div> <a href="http://127.0.0.1:5500/safety-resource.html" target="_blank"><button type="button" style="background-color: rgb(212, 208, 208);">Send</button></a></div> 
+
+   
+</div>
+
+
+
+<script>
+let sendBtn = document.querySelector("button");
+let color = {
+    firstColor: "crimson",
+    secondColor: "white"
+}
+
+
+sendBtn.addEventListener("mouseenter", function() {
+sendBtn.style.backgroundColor = color.firstColor
+sendBtn.style.color = color.secondColor
+});
+
+// Revert color when hover ends
+sendBtn.addEventListener("mouseleave", function() {
+    sendBtn.style.backgroundColor = ""; // resets to original
+    sendBtn.style.color = "";
+});
+
+
+
+</script>
+
+
+</body>
+</html>
